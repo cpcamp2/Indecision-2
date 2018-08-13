@@ -2,7 +2,7 @@ import React from 'react';
 import AddOption from './AddOption';
 import Options from './Options';
 import Action from './Action';
-import Header from './Header';
+import Header from './Header2';
 import OptionModal from './OptionModal';
 
 class IndecisionApp extends React.Component {
@@ -70,7 +70,7 @@ class IndecisionApp extends React.Component {
 
     return (
       <div>
-        <Header subtitle={subtitle} />
+        {/* <Header subtitle={subtitle} /> */}
         <div className="container">
           <Action
             hasOptions={this.state.options.length > 0}
