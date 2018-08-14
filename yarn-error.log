@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/9.8.0/bin/node /usr/local/bin/yarn run dev-server
+  /usr/local/Cellar/node/9.8.0/bin/node /usr/local/bin/yarn test
 
 PATH: 
   /Users/christophercamp/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
@@ -15,7 +15,7 @@ Platform:
 
 npm manifest: 
   {
-    "name": "expensify",
+    "name": "indecision-2",
     "version": "1.0.0",
     "main": "index.js",
     "author": "Chris Camp",
@@ -34,12 +34,14 @@ npm manifest:
       "babel-loader": "7.1.1",
       "babel-plugin-transform-class-properties": "6.24.1",
       "babel-plugin-transform-object-rest-spread": "6.23.0",
+      "babel-polyfill": "6.26.0",
       "babel-preset-env": "1.5.2",
       "babel-preset-react": "6.24.1",
       "css-loader": "0.28.4",
       "express": "4.15.4",
       "extract-text-webpack-plugin": "3.0.0",
       "firebase": "4.2.0",
+      "history": "4.7.2",
       "moment": "2.19.3",
       "node-sass": "4.5.3",
       "normalize.css": "7.0.0",
@@ -937,7 +939,7 @@ Lockfile:
       babel-runtime "^6.22.0"
       babel-types "^6.24.1"
   
-  babel-polyfill@^6.23.0:
+  babel-polyfill@6.26.0, babel-polyfill@^6.23.0:
     version "6.26.0"
     resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
     dependencies:
@@ -3336,7 +3338,7 @@ Lockfile:
       hoek "2.x.x"
       sntp "1.x.x"
   
-  history@^4.7.2:
+  history@4.7.2, history@^4.7.2:
     version "4.7.2"
     resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
     dependencies:
@@ -8183,8 +8185,8 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c webpack-dev-server
-  Directory: /Users/christophercamp/Desktop/React/AndrewM/expensify-app
+  Arguments: -c cross-env NODE_ENV=test jest --config=jest.config.json
+  Directory: /Users/christophercamp/Desktop/React/AndrewM/indecision-2
   Output:
   
       at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
