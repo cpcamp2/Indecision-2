@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/9.8.0/bin/node /usr/local/bin/yarn run build:dev
+  /usr/local/Cellar/node/9.8.0/bin/node /usr/local/bin/yarn test
 
 PATH: 
   /Users/christophercamp/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
@@ -15,7 +15,7 @@ Platform:
 
 npm manifest: 
   {
-    "name": "react-boilerplate",
+    "name": "indecision-2",
     "version": "1.0.0",
     "main": "index.js",
     "author": "Chris Camp",
@@ -8183,9 +8183,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 127
+  Exit code: 1
   Command: sh
-  Arguments: -c webpack
+  Arguments: -c cross-env NODE_ENV=test jest --config=jest.config.json
   Directory: /Users/christophercamp/Desktop/React/AndrewM/indecision-2
   Output:
   

@@ -10,10 +10,10 @@ exports[`should render login page correctly 1`] = `
     <h1
       className="box-layout__title"
     >
-      Boilerplate
+      Indecision
     </h1>
     <p>
-      Tag line for app
+      Put your life in the hands of a computer
     </p>
     <button
       className="button"
